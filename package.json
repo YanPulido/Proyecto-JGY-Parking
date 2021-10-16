@@ -1,0 +1,57 @@
+{
+  "name": "mevnexample",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.5.0",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8",
+    "morgan": "^1.10.0",
+    "serve-static": "^1.14.1",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.3.7",
+    "vue-router": "^3.5.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "nodemon": "^2.0.13",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
